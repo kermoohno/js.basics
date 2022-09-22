@@ -64,12 +64,26 @@ if (ohutemperatuur > 4)
 
 //Yl 2.3
 
-let vanus = prompt("Sisesta enda vanus");
+let vanus = Number(prompt("Sisesta enda vanus"));
 let sugu = prompt("Sisesta enda sugu(N, n, M, m)");
-let treening = prompt("Sisesta treeningutüüp 1 - tervisetreening, 2 - põhivastupidavuse treening, 3 - intensiivne aeroobne treening");
-let meestepulss = 220 - vanus;
-let naistepulss = 206 - (0.88 * vanus);
-let tervise =
-let pohi =
-let intensiivne =
+let treening = Number(prompt("Sisesta treeningutüüp 1 - tervisetreening, 2 - põhivastupidavuse treening, 3 - intensiivne aeroobne treening"));
+let pulsisagedus;
+if(sugu == 'n' || sugu == 'N'){
+    pulsisagedus = 206 - 0.88 * vanus
+} else if(sugu == 'm' || sugu == 'M'){
+    pulsisagedus = 220 - vanus
 
+}
+let min;
+let max;
+if(treening == 1){
+    min = 0.5 * pulsisagedus
+    max = 0.7 * pulsisagedus
+} else if(treening == 2){
+    min = 0.7 * pulsisagedus
+    max = 0.8 * pulsisagedus
+} else if(treening == 3){
+    min = 0.8 * pulsisagedus
+    max = 0.87 * pulsisagedus
+}
+console.log(`Pulsisagedus peab olema vahemikus ${Math.round(min)} kuni ${max}`)

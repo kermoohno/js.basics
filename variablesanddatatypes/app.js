@@ -162,10 +162,23 @@ console.log(`Porgandeid kokku ${porgandidKokku}.`)
 
 //Yl 3.3
 
-let taringuteArv = Number(prompt(`Sisesta täringute arv`))
+/*let taringuteArv = Number(prompt(`Sisesta täringute arv`))
 for(let kord = 1; kord <= taringuteArv; kord++){
     let taring = Math.ceil(Math.random() * 6)
     console.log(taring)
 }
+*/
 
+//Yl 3.4
+
+let poialPoisid = Number(prompt(`Mitu pöialpoissi tahab õunu`))
+let lumivalgekeseounad = 14
+let poialpoiss = 1
+while(poialpoiss <= poialPoisid){
+    let ounad = Math.ceil(Math.random()*2)
+    console.log(ounad)
+    lumivalgekeseounad = lumivalgekeseounad - ounad
+    poialpoiss++
+}
+console.log(`Lumivalgekesele jäi ${lumivalgekeseounad} õuna`)
 

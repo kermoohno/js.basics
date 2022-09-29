@@ -160,5 +160,12 @@ while(ring <= ringideArv){
 console.log(`Porgandeid kokku ${porgandidKokku}.`)
 */
 
+//Yl 3.3
+
+let taringuteArv = Number(prompt(`Sisesta täringute arv`))
+for(let kord = 1; kord <= taringuteArv; kord++){
+    let taring = Math.ceil(Math.random() * 6)
+    console.log(taring)
+}
 
 

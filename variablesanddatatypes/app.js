@@ -16,9 +16,9 @@
 
 //Yl1.4
 
-    //var nimi = prompt("Mis on sinu nimi?");
-   // var lubatudkiirus = prompt("Mis oli lubatud kiirus?");
-    //var tegelikkiirus = prompt("Kui kiiresti sa tegelikult sõitsid?");
+//var nimi = prompt("Mis on sinu nimi?");
+// var lubatudkiirus = prompt("Mis oli lubatud kiirus?");
+//var tegelikkiirus = prompt("Kui kiiresti sa tegelikult sõitsid?");
 
     //var trahv = (tegelikkiirus-lubatudkiirus)*3;
 
@@ -48,6 +48,7 @@ let bussidtaidetud = Math.floor(inimesed / kohtiBussides);
 let mahajaanud = inimesed % kohtiBussides;
 
 console.log(`Inimeste sõidutamiseks läheb vaja ${bussidtaidetud} bussi ja ${mahajaanud} inimest jäi maha`);
+
 */
 
 //Yl 2.1
@@ -116,3 +117,48 @@ console.log(`${koht}`)
  */
 
 //Yl 2.5
+/*let teema = prompt(`Kirja teema:`);
+let fail = prompt(`Kas kirjaga on kaasas fail? "jah" "ei"`);
+let suurus = prompt(`Kui suur on kiri mbs`);
+let test = teema;
+let spamm;
+
+if(test == teema  && fail == "jah" && suurus < 1){
+    console.log(`Ei ole spämm`)
+} else if(teema == "" && fail == "jah" && suurus >1 ) {
+    console.log(`On spämm`)
+} else if(teema == "" && fail == "ei" && suurus > 1){
+    console.log(`On spämm`)
+}
+*/
+
+//Yl 3.1
+
+/*let kordamise_arv = Number(prompt(`Sisestage mitu korda äratab`))
+let kord = 1
+while(kord <= kordamise_arv){
+    console.log(`Tõuse ja sära ${kord}. kord`)
+    kord++
+}
+*/
+
+//Yl 3.2
+
+/*let ringideArv = Number(prompt(`Sisesta ringide arv`))
+let porgandidKokku = 0
+let ring = 1
+while(ring <= ringideArv){
+    //console.log(`${ring}. ring`)
+    if(ring % 2 == 0){
+        //console.log(`saab ${ring} porgandint`)
+        porgandidKokku = porgandidKokku + ring
+        //6
+        // console.log(porgandidKokku)
+    }
+    ring++
+}
+console.log(`Porgandeid kokku ${porgandidKokku}.`)
+*/
+
+
+
